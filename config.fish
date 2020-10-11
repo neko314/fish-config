@@ -18,7 +18,6 @@ set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
 set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include" 
 
 if status --is-interactive
-  abbr --add --global first 'echo my first abbreviation'
   abbr --add --global gco git checkout
   abbr --add --global ga git add
   abbr --add --global gc git commit -v
