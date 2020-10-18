@@ -18,10 +18,10 @@ set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
 set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include" 
 
 if status --is-interactive
-  abbr --add --global gco git checkout
-  abbr --add --global ga git add
-  abbr --add --global gc git commit -v
-  abbr --add --global gco git checkout
-  abbr --add --global gs git status
-  abbr --add --global gl git log --stat -p
+  abbr --add --global gco 'git checkout'
+  abbr --add --global ga  'git add'
+  abbr --add --global gc  'git commit -v'
+  abbr --add --global gco 'git checkout'
+  abbr --add --global gst 'git status'
+  abbr --add --global gl  'git log --stat -p'
 end
