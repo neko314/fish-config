@@ -22,13 +22,27 @@ if status --is-interactive
     abbr --add --global bi    'bundle install'
     abbr --add --global bx    'bundle exec'
     abbr --add --global clean 'git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'
-    abbr --add --global ga    'git add'
+    abbr --add --global ga    'ddgit add'
     abbr --add --global gb    'git branch'
     abbr --add --global gc    'git commit -v'
     abbr --add --global gco   'git checkout'
     abbr --add --global gst   'git status'
     abbr --add --global gl    'git log -p --stat'
 
-    # abbr --add --global graph 'log --pretty=format:'%Cgreen[%cd] %Cblue%h %Cred<%cn> %Creset%s' --date=short  --decorate --graph --branches --tags'
     abbr --add --global pr    'gh pr checkout'
+
+    abbr --add --global btc 'blueutil --connect'
+    abbr --add --global btd 'blueutil --disconnect' 
+end
+
+# use blueutil
+# https://github.com/toy/blueutil
+function trackpad --wraps blueutil
+  if test -d $argv || test $argv = 'on'
+    blueutil --connect 14-c2-13-ee-fd-c1
+  else if test $argv = 'off'
+    blueutil --disconnect 14-c2-13-ee-fd-c1
+  else
+    echo wrong argument
+  end
 end
