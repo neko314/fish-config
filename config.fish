@@ -22,7 +22,7 @@ if status --is-interactive
     abbr --add --global bi    'bundle install'
     abbr --add --global bx    'bundle exec'
     abbr --add --global clean 'git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'
-    abbr --add --global ga    'ddgit add'
+    abbr --add --global ga    'git add'
     abbr --add --global gb    'git branch'
     abbr --add --global gc    'git commit -v'
     abbr --add --global gco   'git checkout'
