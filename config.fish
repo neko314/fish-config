@@ -46,3 +46,4 @@ function trackpad --wraps blueutil
     echo wrong argument
   end
 end
+set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
