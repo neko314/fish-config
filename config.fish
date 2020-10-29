@@ -21,6 +21,7 @@ if status --is-interactive
     abbr --add --global b     'bundle'
     abbr --add --global bi    'bundle install'
     abbr --add --global bx    'bundle exec'
+
     abbr --add --global clean 'git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'
     abbr --add --global ga    'git add'
     abbr --add --global gb    'git branch'
@@ -30,6 +31,8 @@ if status --is-interactive
     abbr --add --global gl    'git log -p --stat'
 
     abbr --add --global pr    'gh pr checkout'
+
+    abbr --add --global sleep 'pmset sleepnow'
 
     abbr --add --global btc 'blueutil --connect'
     abbr --add --global btd 'blueutil --disconnect' 
