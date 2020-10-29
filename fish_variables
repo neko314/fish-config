@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BUNDLER_EDITOR:code
 SETUVAR EDITOR:code
+SETUVAR --export RAILS_MAX_WORKERS:0
 SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:FFC473
 SETUVAR fish_color_cancel:normal
