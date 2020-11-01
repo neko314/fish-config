@@ -17,6 +17,9 @@ set -gx PKG_CONFIG_PATH "/usr/local/opt/icu4c/lib/pkgconfig"
 set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
 set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include" 
 
+## imagemagick setting
+set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
+
 if status --is-interactive
     abbr --add --global b     'bundle'
     abbr --add --global bi    'bundle install'
@@ -49,4 +52,4 @@ function trackpad --wraps blueutil
     echo wrong argument
   end
 end
-set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
+
